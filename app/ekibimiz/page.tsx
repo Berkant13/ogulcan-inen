@@ -9,13 +9,6 @@ export default function TeamPage() {
 
       <section className="team-page">
         <h1>Ekibimiz</h1>
-        <div className="team-tools">
-          <label>
-            <span>İsim</span>
-            <input type="search" aria-label="İsim" />
-          </label>
-          <button type="button">Çalışma Alanları (Tümü)</button>
-        </div>
 
         <div className="lawyer-grid">
           <Link className="lawyer-card" href="/ekibimiz/ogulcan-inen">

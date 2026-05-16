@@ -499,7 +499,7 @@ button:hover {
 }
 
 .practice-detail-hero {
-  padding: 82px clamp(24px, 6vw, 92px) 70px;
+  padding: 56px clamp(24px, 5vw, 72px) 48px;
   background: linear-gradient(135deg, var(--burgundy-dark), var(--burgundy));
   color: #fff;
 }
@@ -517,7 +517,7 @@ button:hover {
   max-width: 980px;
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(44px, 6vw, 78px);
+  font-size: clamp(40px, 5.4vw, 68px);
   font-weight: 500;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -526,8 +526,8 @@ button:hover {
 .practice-detail-layout {
   display: grid;
   grid-template-columns: 330px minmax(0, 1fr);
-  gap: 64px;
-  padding: 70px clamp(24px, 6vw, 92px) 96px;
+  gap: 42px;
+  padding: 44px clamp(24px, 5vw, 72px) 64px;
   background: var(--paper);
 }
 
@@ -566,15 +566,19 @@ button:hover {
 }
 
 .practice-detail-copy {
-  display: grid;
-  gap: 24px;
+  display: block;
+  max-width: 980px;
 }
 
 .practice-detail-copy p {
   margin: 0;
   color: #48423d;
-  font-size: 19px;
-  line-height: 1.85;
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.practice-detail-copy p + p {
+  margin-top: 10px;
 }
 
 .team-grid {

@@ -7,16 +7,20 @@ export function generateStaticParams() {
   return practiceAreaPages.map((area) => ({ slug: area.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const area = practiceAreaPages.find((item) => item.slug === params.slug);
+type PageParams = Promise<{ slug: string }>;
+
+export async function generateMetadata({ params }: { params: PageParams }) {
+  const { slug } = await params;
+  const area = practiceAreaPages.find((item) => item.slug === slug);
 
   return {
     title: area ? `${area.detailTitle ?? area.title} | İnen & Durmuş Hukuk Bürosu` : "Faaliyet Alanı",
   };
 }
 
-export default function PracticeAreaPage({ params }: { params: { slug: string } }) {
-  const area = practiceAreaPages.find((item) => item.slug === params.slug);
+export default async function PracticeAreaPage({ params }: { params: PageParams }) {
+  const { slug } = await params;
+  const area = practiceAreaPages.find((item) => item.slug === slug);
 
   if (!area) {
     notFound();
