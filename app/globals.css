@@ -744,7 +744,7 @@ button:hover {
   align-items: center;
   min-height: 560px;
   padding: 0 clamp(24px, 6vw, 92px);
-  background: linear-gradient(90deg, #d9dbde, #aeb2b7);
+  background: linear-gradient(135deg, #4d0c1f 0%, #8c1433 54%, #a2063b 100%);
   overflow: hidden;
 }
 
@@ -762,7 +762,7 @@ button:hover {
 
 .profile-title h1 {
   margin: 0;
-  color: #234f94;
+  color: #fff;
   font-size: clamp(48px, 6vw, 86px);
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -774,7 +774,7 @@ button:hover {
   width: 96px;
   height: 3px;
   margin: 34px 0 20px;
-  background: #fff;
+  background: rgb(255 255 255 / 82%);
 }
 
 .profile-title p {
@@ -1245,14 +1245,14 @@ main > footer {
   padding: 24px 24px 18px;
   color: #121110;
   text-align: center;
-  border-top: 3px solid #2d8fe8;
-  border-bottom: 3px solid #2d8fe8;
+  border-top: 3px solid var(--burgundy);
+  border-bottom: 3px solid var(--burgundy);
 }
 
 .logo span {
   display: inline-block;
   padding: 0 10px;
-  border: 1px dotted #2d8fe8;
+  border: 1px dotted var(--burgundy);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(48px, 7vw, 88px);
   font-weight: 900;
