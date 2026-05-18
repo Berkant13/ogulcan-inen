@@ -25,30 +25,29 @@ export default function Home() {
 
       <section className="hero" id="home">
         <article className="lead-story">
-          <p className="section-label">Başyazı</p>
           <h1>Hukukta detay, ayrıntıda adalet.</h1>
           <p className="byline">— Av. Oğulcan İnen, Kurucu ve Yönetici Ortak</p>
           <p>
-            Büromuz aile ve boşanma hukuku, birleşme ve devralmalar, ceza hukuku,
-            enerji hukuku, fikri ve sınai mülkiyet hukuku, icra ve iflas hukuku,
-            idare ve vergi hukuku, inşaat ve imar hukuku, inşaat ve gayrimenkul
-            hukuku, iş ve sosyal güvenlik hukuku, kişisel verilerin korunması
-            hukuku, kira hukuku, miras hukuku, rekabet hukuku, sağlık ve ilaç
-            hukuku, sözleşmeler hukuku, şirketler ve ticaret hukuku, spor hukuku,
-            sigorta hukuku, tüketici hukuku, taşımacılık ve lojistik hukuku ile
-            yabancılar ve vatandaşlık hukuku olmak üzere dava, tahkim ve idari
+            Büromuz Aile ve Boşanma Hukuku, Birleşme ve Devralmalar, Ceza Hukuku,
+            Enerji Hukuku, Fikri ve Sınai Mülkiyet Hukuku, İcra ve İflas Hukuku,
+            İdare ve Vergi Hukuku, İnşaat ve İmar Hukuku, İnşaat ve Gayrimenkul
+            Hukuku, İş ve Sosyal Güvenlik Hukuku, Kişisel Verilerin Korunması
+            Hukuku, Kira Hukuku, Miras Hukuku, Rekabet Hukuku, Sağlık ve İlaç
+            Hukuku, Sözleşmeler Hukuku, Şirketler ve Ticaret Hukuku, Spor Hukuku,
+            Sigorta Hukuku, Tüketici Hukuku, Taşımacılık ve Lojistik Hukuku ile
+            Yabancılar ve Vatandaşlık Hukuku olmak üzere dava, tahkim ve idari
             uyuşmazlıklara kadar geniş bir yelpazede hukuki çözümler sunmaktadır.
             Bunun yanı sıra dava takibi, tahkim arabuluculuk ve diğer alternatif
             uyuşmazlık çözüm yollarında etkin temsil hizmeti sunmaktadır.
           </p>
 
-          <Link className="text-link" href="/#hakkimizda">Hakkımızda +</Link>
+          <Link className="text-link" href="/#hakkimizda">Devamını okuyunuz +</Link>
         </article>
 
-        <div className="monogram-card" aria-label="İnen Hukuk ve Danışmanlık monogramı">
+        <div className="monogram-card" aria-label="İNEN Hukuk ve Danışmanlık monogramı">
           <Image
             src="/logo_inen.jpeg"
-            alt="İnen Hukuk ve Danışmanlık amblemi"
+            alt="İNEN Hukuk ve Danışmanlık amblemi"
             width={720}
             height={480}
             priority
@@ -206,18 +205,18 @@ export default function Home() {
 
         <div className="contact-info" aria-label="Konum ve iletişim bilgileri">
           <div className="map-card">
-            <div className="map-popup">
-              <strong>İNEN</strong>
-              <span>Hukuk ve Danışmanlık</span>
-              <small>Adres bilgisi yakında eklenecektir.</small>
-            </div>
-            <div className="map-pin" />
+            <iframe
+              title="İNEN Hukuk ve Danışmanlık konumu"
+              src="https://maps.google.com/maps?f=q&source=s_q&hl=tr&q=Madalyon%20Hukuk%20ve%20Dan%C4%B1%C5%9Fmanl%C4%B1k&sll=39.9150189,32.7692046&z=18&iwloc=A&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
 
           <address>
-            <strong>İnen Hukuk ve Danışmanlık</strong>
-            <span>Adres: Mustafa Kemal Mah. 2136 Cad. Ayça Apt. No: 5/10 Çankaya/Ankara</span>
-            <span>Telefon:</span>
+            <strong>İNEN Hukuk ve Danışmanlık</strong>
+            <span>Adres: Mustafa Kemal Mahallesi 2136. Sokak No:5/10 Çankaya/Ankara</span>
+            <span>Telefon: +90 533 376 2365</span>
             <span>E-mail: ogulcaninen@gmail.com</span>
           </address>
         </div>

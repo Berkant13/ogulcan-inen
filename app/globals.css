@@ -125,6 +125,8 @@ textarea {
   width: 285px;
   max-height: min(70vh, 620px);
   overflow-y: auto;
+  scrollbar-color: var(--burgundy) #e5ded2;
+  scrollbar-width: thin;
   padding: 12px 0;
   background: var(--white);
   box-shadow: 0 20px 44px rgb(0 0 0 / 15%);
@@ -132,6 +134,19 @@ textarea {
   pointer-events: none;
   transform: translateY(8px);
   transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.submenu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.submenu::-webkit-scrollbar-track {
+  background: #e5ded2;
+}
+
+.submenu::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--burgundy);
 }
 
 .submenu.compact {
@@ -374,6 +389,8 @@ button:hover {
   color: #514b45;
   font-size: 18px;
   line-height: 1.85;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .practice-grid {
@@ -954,81 +971,14 @@ textarea::placeholder {
   min-height: 360px;
   overflow: hidden;
   border: 1px solid #cfc6ba;
-  background:
-    linear-gradient(35deg, transparent 48%, rgb(145 155 157 / 45%) 49%, rgb(145 155 157 / 45%) 51%, transparent 52%),
-    linear-gradient(130deg, transparent 42%, rgb(145 155 157 / 38%) 43%, rgb(145 155 157 / 38%) 45%, transparent 46%),
-    linear-gradient(75deg, transparent 58%, rgb(145 155 157 / 36%) 59%, rgb(145 155 157 / 36%) 61%, transparent 62%),
-    linear-gradient(0deg, rgb(255 255 255 / 30%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(255 255 255 / 34%) 1px, transparent 1px),
-    #dedbd2;
-  background-size: auto, auto, auto, 72px 72px, 72px 72px, auto;
+  background: #dedbd2;
 }
 
-.map-card::before,
-.map-card::after {
-  position: absolute;
-  color: #817d76;
-  content: "Konum bilgisi";
-  font-size: 15px;
-  font-weight: 700;
-  transform: rotate(-18deg);
-}
-
-.map-card::before {
-  right: 16px;
-  bottom: 105px;
-}
-
-.map-card::after {
-  left: 28px;
-  top: 185px;
-  content: "Harita alanı";
-  transform: rotate(18deg);
-}
-
-.map-popup {
-  position: absolute;
-  top: 30px;
-  left: 28px;
-  display: grid;
-  gap: 7px;
-  width: min(310px, calc(100% - 56px));
-  padding: 18px;
-  background: #fff;
-  box-shadow: 0 12px 26px rgb(0 0 0 / 18%);
-}
-
-.map-popup strong,
-.map-popup span {
-  font-size: 16px;
-  font-weight: 800;
-}
-
-.map-popup small {
-  color: #4d4742;
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.map-pin {
-  position: absolute;
-  right: 34%;
-  bottom: 34%;
-  width: 34px;
-  height: 34px;
-  border: 7px solid #c91f26;
-  border-radius: 50% 50% 50% 0;
-  background: #fff;
-  transform: rotate(-45deg);
-  box-shadow: 0 8px 20px rgb(0 0 0 / 22%);
-}
-
-.map-pin::after {
-  position: absolute;
-  inset: 6px;
-  border-radius: 50%;
-  background: #c91f26;
-  content: "";
+.map-card iframe {
+  display: block;
+  width: 100%;
+  min-height: 360px;
+  border: 0;
 }
 
 address {
@@ -1106,8 +1056,8 @@ address strong {
     position: static;
     display: none;
     width: 100%;
-    max-height: none;
-    overflow-y: visible;
+    max-height: 52vh;
+    overflow-y: auto;
     margin-top: 4px;
     box-shadow: none;
     opacity: 1;
@@ -1371,11 +1321,13 @@ main > footer {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.55;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .text-link {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 18px;
   color: #a22b1e;
   font-size: 10px;
   font-weight: 900;
@@ -1388,16 +1340,17 @@ main > footer {
   min-height: 360px;
   padding: 26px;
   place-items: center;
-  background: #171716;
+  background: #000;
   color: #f4efe6;
 }
 
 .monogram-card img {
   display: block;
-  width: min(72%, 420px);
+  width: min(96%, 640px);
   height: auto;
+  filter: grayscale(1) invert(1) contrast(1.55) brightness(0.88);
   mix-blend-mode: screen;
-  filter: grayscale(1) contrast(1.18) invert(1);
+  transform: scale(1.12);
 }
 
 .monogram-card small {
