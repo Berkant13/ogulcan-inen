@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "./components";
 import { lawyer, practiceAreaPages } from "./data";
@@ -14,21 +15,6 @@ const articles = [
   {
     date: "02 Şubat 2026",
     title: "Aile şirketlerinde pay devri ve yönetim kontrolü nasıl korunur?",
-  },
-];
-
-const announcements = [
-  {
-    date: "18 Mart 2026",
-    title: "İnen & Durmuş Hukuk Bürosu, teknoloji yatırımı sürecinde yerli girişime danışmanlık verdi.",
-  },
-  {
-    date: "04 Mart 2026",
-    title: "Yeni ofisimiz Ankara’da hizmet vermeye başladı.",
-  },
-  {
-    date: "15 Ocak 2026",
-    title: "2026 yılı mevzuat değerlendirme bülteni yayımlandı.",
   },
 ];
 
@@ -59,8 +45,14 @@ export default function Home() {
           <Link className="text-link" href="/#hakkimizda">Hakkımızda +</Link>
         </article>
 
-        <div className="monogram-card" aria-label="İnen & Durmuş monogramı">
-          <span>id</span>
+        <div className="monogram-card" aria-label="İnen Hukuk ve Danışmanlık monogramı">
+          <Image
+            src="/logo_inen.jpeg"
+            alt="İnen Hukuk ve Danışmanlık amblemi"
+            width={720}
+            height={480}
+            priority
+          />
           <small>Şeffaflık — Söz — Sonuçlanan hukuk.</small>
         </div>
 
@@ -81,9 +73,9 @@ export default function Home() {
           <h2>Hukuki gelişmeleri sade ve uygulanabilir notlarla takip edin.</h2>
         </div>
         <p>
-          Yayınlar başlığı altında büromuzun makaleleri ve duyuruları ayrı
-          başlıklarla listelenir. İçerikler müvekkillerin hızlı karar almasına
-          yardımcı olacak kısa, net ve pratik formatta hazırlanır.
+          Yayınlar başlığı altında büromuzun makaleleri listelenir. İçerikler
+          müvekkillerin hızlı karar almasına yardımcı olacak kısa, net ve pratik
+          formatta hazırlanır.
         </p>
       </section>
 
@@ -99,22 +91,6 @@ export default function Home() {
                 <time>{article.date}</time>
                 <h3>{article.title}</h3>
                 <a href="#iletisim">Devamını oku</a>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="publication-column" id="duyurular">
-          <div className="section-title">
-            <span />
-            <h2>Duyurular</h2>
-          </div>
-          <div className="publication-list muted-list">
-            {announcements.map((announcement) => (
-              <article key={announcement.title}>
-                <time>{announcement.date}</time>
-                <h3>{announcement.title}</h3>
-                <a href="#iletisim">İncele</a>
               </article>
             ))}
           </div>
@@ -231,18 +207,18 @@ export default function Home() {
         <div className="contact-info" aria-label="Konum ve iletişim bilgileri">
           <div className="map-card">
             <div className="map-popup">
-              <strong>İNEN &amp; DURMUŞ</strong>
-              <span>Hukuk Bürosu</span>
+              <strong>İNEN</strong>
+              <span>Hukuk ve Danışmanlık</span>
               <small>Adres bilgisi yakında eklenecektir.</small>
             </div>
             <div className="map-pin" />
           </div>
 
           <address>
-            <strong>İnen &amp; Durmuş Hukuk Bürosu</strong>
-            <span>Adres:</span>
+            <strong>İnen Hukuk ve Danışmanlık</strong>
+            <span>Adres: Mustafa Kemal Mah. 2136 Cad. Ayça Apt. No: 5/10 Çankaya/Ankara</span>
             <span>Telefon:</span>
-            <span>E-mail: info@inen.av.tr</span>
+            <span>E-mail: ogulcaninen@gmail.com</span>
           </address>
         </div>
       </section>

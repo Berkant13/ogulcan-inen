@@ -321,10 +321,6 @@ button:hover {
   background: var(--white);
 }
 
-.muted-list article {
-  background: #eee8df;
-}
-
 .publication-list time {
   color: var(--burgundy);
   font-size: 12px;
@@ -1240,23 +1236,6 @@ main > footer {
   box-shadow: 0 28px 80px rgb(0 0 0 / 30%);
 }
 
-.edition-bar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 18px;
-  padding: 9px 52px;
-  color: #655f57;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.36em;
-  text-transform: uppercase;
-}
-
-.edition-bar span:last-child {
-  color: #a22b1e;
-  text-align: right;
-}
-
 .logo {
   position: relative;
   display: grid;
@@ -1407,13 +1386,12 @@ main > footer {
   color: #f4efe6;
 }
 
-.monogram-card span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(120px, 16vw, 210px);
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: -0.18em;
-  line-height: 0.7;
+.monogram-card img {
+  display: block;
+  width: min(72%, 420px);
+  height: auto;
+  mix-blend-mode: screen;
+  filter: grayscale(1) contrast(1.18) invert(1);
 }
 
 .monogram-card small {
@@ -1522,14 +1500,8 @@ main > footer {
     width: min(100%, calc(100% - 24px));
   }
 
-  .edition-bar,
   .hero {
     grid-template-columns: 1fr;
-  }
-
-  .edition-bar,
-  .edition-bar span:last-child {
-    text-align: center;
   }
 
   .hero {

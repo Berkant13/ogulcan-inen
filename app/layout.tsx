@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "İnen & Durmuş Hukuk Bürosu",
+  title: "İnen Hukuk ve Danışmanlık",
   description:
     "Şirketler hukuku, uyuşmazlık çözümü, iş hukuku ve regülasyon alanlarında butik hukuk danışmanlığı.",
   openGraph: {
-    title: "İnen & Durmuş Hukuk Bürosu",
+    title: "İnen Hukuk ve Danışmanlık",
     description:
       "Gazete estetiğinde tasarlanmış kurumsal avukatlık sitesi örneği.",
     type: "website",

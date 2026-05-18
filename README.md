@@ -1,4 +1,4 @@
-# İnen & Durmuş Hukuk Bürosu
+# İnen Hukuk ve Danışmanlık
 
 Gazete / edisyon estetiğinde hazırlanmış Next.js avukatlık bürosu örnek sitesi.
 

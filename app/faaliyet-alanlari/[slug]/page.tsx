@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: PageParams }) {
   const area = practiceAreaPages.find((item) => item.slug === slug);
 
   return {
-    title: area ? `${area.detailTitle ?? area.title} | İnen & Durmuş Hukuk Bürosu` : "Faaliyet Alanı",
+    title: area ? `${area.detailTitle ?? area.title} | İnen Hukuk ve Danışmanlık` : "Faaliyet Alanı",
   };
 }
 
