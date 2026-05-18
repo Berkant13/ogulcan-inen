@@ -56,7 +56,6 @@ export default function Home() {
         </div>
 
         <aside className="issue-list" aria-label="Bu sayıdaki yayınlar">
-          <p className="section-label">Bu Sayıda</p>
           {articles.map((article) => (
             <Link href="#makaleler" key={article.title}>
               <span>{article.date}</span>
