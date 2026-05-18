@@ -287,7 +287,7 @@ export const lawyer = {
   email: "ogulcaninen@gmail.com",
   mobile: "+90 533 376 2365",
   officePhone: "",
-  education: "Özyeğin Üniversitesi, Hukuk Fakültesi - Lisans, 2024",
+  education: "Özyeğin Üniversitesi, Hukuk Fakültesi - Lisans",
   languages: "İngilizce, Türkçe",
   bar: "Ankara 1 nolu Barosu, Türkiye Barolar Birliği",
   image: "/ogulcan_inen.jpeg",
