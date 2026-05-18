@@ -15,7 +15,7 @@ export function SiteHeader() {
         <div className="nav-item has-submenu">
           <Link href="/#alanlar">Faaliyet Alanlarımız</Link>
           <div className="submenu">
-            {practiceAreaPages.slice(0, 8).map((area) => (
+            {practiceAreaPages.map((area) => (
               <Link href={`/faaliyet-alanlari/${area.slug}`} key={area.slug}>{area.title}</Link>
             ))}
           </div>
