@@ -207,7 +207,7 @@ export default function Home() {
           <div className="map-card">
             <iframe
               title="İNEN Hukuk ve Danışmanlık konumu"
-              src="https://maps.google.com/maps?f=q&source=s_q&hl=tr&q=Madalyon%20Hukuk%20ve%20Dan%C4%B1%C5%9Fmanl%C4%B1k&sll=39.9150189,32.7692046&z=18&iwloc=A&output=embed"
+              src="https://maps.google.com/maps?f=q&source=s_q&hl=tr&q=39.9150189,32.7692046%20(%C4%B0NEN%20Hukuk%20ve%20Dan%C4%B1%C5%9Fmanl%C4%B1k)&z=18&iwloc=A&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
