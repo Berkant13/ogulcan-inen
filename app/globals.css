@@ -1340,17 +1340,17 @@ main > footer {
   min-height: 360px;
   padding: 26px;
   place-items: center;
-  background: #000;
+  overflow: hidden;
+  background: #1e1b18;
   color: #f4efe6;
 }
 
 .monogram-card img {
   display: block;
-  width: min(96%, 640px);
-  height: auto;
-  filter: grayscale(1) invert(1) contrast(1.55) brightness(0.88);
-  mix-blend-mode: screen;
-  transform: scale(1.12);
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
 }
 
 .monogram-card small {

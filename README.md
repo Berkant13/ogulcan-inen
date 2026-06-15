@@ -1,6 +1,6 @@
-# İnen Hukuk ve Danışmanlık
+# Av. Oğulcan İnen
 
-Gazete / edisyon estetiğinde hazırlanmış Next.js avukatlık bürosu örnek sitesi.
+Gazete / edisyon estetiğinde hazırlanmış Next.js şahsi avukatlık sitesi.
 
 ## Komutlar
 

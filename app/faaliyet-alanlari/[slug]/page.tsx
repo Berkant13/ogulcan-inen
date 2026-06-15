@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: PageParams }) {
   const area = practiceAreaPages.find((item) => item.slug === slug);
 
   return {
-    title: area ? `${area.detailTitle ?? area.title} | İNEN Hukuk ve Danışmanlık` : "Faaliyet Alanı",
+    title: area ? `${area.detailTitle ?? area.title} | Av. Oğulcan İnen` : "Faaliyet Alanı",
   };
 }
 
@@ -31,7 +31,7 @@ export default async function PracticeAreaPage({ params }: { params: PageParams 
       <SiteHeader />
 
       <section className="practice-detail-hero">
-        <span>Faaliyet Alanlarımız</span>
+        <span>Faaliyet Alanları</span>
         <h1>{area.detailTitle ?? area.title}</h1>
       </section>
 

@@ -4,16 +4,14 @@ import { practiceAreaPages } from "./data";
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <Link className="logo" href="/" aria-label="İNEN Hukuk ve Danışmanlık ana sayfa">
-        <span>İNEN</span>
-        <small>Hukuk ve Danışmanlık</small>
+      <Link className="logo" href="/" aria-label="Av. Oğulcan İnen ana sayfa">
+        <span>Av. OĞULCAN İNEN</span>
       </Link>
 
       <nav className="nav" aria-label="Ana menü">
-        <Link href="/#hakkimizda">Hakkımızda</Link>
-        <Link href="/ekibimiz">Ekibimiz</Link>
+        <Link href="/#hakkimizda">Hakkımda</Link>
         <div className="nav-item has-submenu">
-          <Link href="/#alanlar">Faaliyet Alanlarımız</Link>
+          <Link href="/#alanlar">Faaliyet Alanları</Link>
           <div className="submenu">
             {practiceAreaPages.map((area) => (
               <Link href={`/faaliyet-alanlari/${area.slug}`} key={area.slug}>{area.title}</Link>
@@ -29,7 +27,7 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="footer">
-      <strong>İNEN Hukuk ve Danışmanlık</strong>
+      <strong>Av. OĞULCAN İNEN</strong>
       <span>Yasal Uyarı · Gizlilik Bildirimi · LinkedIn</span>
       <span>© 2026. Tüm hakları saklıdır.</span>
     </footer>

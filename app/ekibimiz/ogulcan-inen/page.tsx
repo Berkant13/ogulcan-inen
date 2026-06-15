@@ -11,7 +11,6 @@ export default function LawyerDetailPage() {
         <div className="profile-title">
           <h1>{lawyer.name}</h1>
           <span />
-          <p>{lawyer.role}</p>
         </div>
       </section>
 

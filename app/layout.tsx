@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "İNEN Hukuk ve Danışmanlık",
+  title: "Av. Oğulcan İnen",
   description:
-    "Şirketler hukuku, uyuşmazlık çözümü, iş hukuku ve regülasyon alanlarında butik hukuk danışmanlığı.",
+    "Av. Oğulcan İnen tarafından sunulan hukuk danışmanlığı ve avukatlık hizmetleri.",
   openGraph: {
-    title: "İNEN Hukuk ve Danışmanlık",
+    title: "Av. Oğulcan İnen",
     description:
-      "Gazete estetiğinde tasarlanmış kurumsal avukatlık sitesi örneği.",
+      "Gazete estetiğinde tasarlanmış şahsi avukatlık sitesi.",
     type: "website",
     locale: "tr_TR",
   },
