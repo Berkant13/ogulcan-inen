@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { practiceAreaPages } from "./data";
 
 export function SiteHeader() {
   return (
@@ -10,14 +9,8 @@ export function SiteHeader() {
 
       <nav className="nav" aria-label="Ana menü">
         <Link href="/#hakkimizda">Hakkımda</Link>
-        <div className="nav-item has-submenu">
-          <Link href="/#alanlar">Faaliyet Alanları</Link>
-          <div className="submenu">
-            {practiceAreaPages.map((area) => (
-              <Link href={`/faaliyet-alanlari/${area.slug}`} key={area.slug}>{area.title}</Link>
-            ))}
-          </div>
-        </div>
+        <Link href="/#alanlar">Faaliyet Alanları</Link>
+        <Link href="/#ekip">Ekip</Link>
         <Link href="/#iletisim">İletişim</Link>
       </nav>
     </header>

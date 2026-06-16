@@ -288,6 +288,8 @@ button:hover {
   font-size: clamp(25px, 2.8vw, 39px);
   font-weight: 400;
   line-height: 1.25;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .intro-section > p {
@@ -296,6 +298,8 @@ button:hover {
   color: #5e5750;
   font-size: 18px;
   line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .publications {
@@ -435,6 +439,8 @@ button:hover {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 21px;
   line-height: 1.45;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .practice-slider {
@@ -1201,14 +1207,11 @@ main > footer {
   padding: 24px 24px 18px;
   color: #121110;
   text-align: center;
-  border-top: 3px solid var(--burgundy);
-  border-bottom: 3px solid var(--burgundy);
 }
 
 .logo span {
   display: inline-block;
   padding: 0 10px;
-  border: 1px dotted var(--burgundy);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(48px, 7vw, 88px);
   font-weight: 900;
@@ -1348,8 +1351,8 @@ main > footer {
 .monogram-card img {
   display: block;
   width: 100%;
-  height: 100%;
-  min-height: 260px;
+  height: auto;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
