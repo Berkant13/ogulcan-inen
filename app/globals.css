@@ -288,6 +288,9 @@ button:hover {
   font-size: clamp(25px, 2.8vw, 39px);
   font-weight: 400;
   line-height: 1.25;
+}
+
+.intro-section h2 {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -298,8 +301,6 @@ button:hover {
   color: #5e5750;
   font-size: 18px;
   line-height: 1.8;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .publications {

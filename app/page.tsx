@@ -76,11 +76,6 @@ export default function Home() {
           <p className="eyebrow">Güncel Yayınlar</p>
           <h2>Hukuki gelişmeleri sade ve uygulanabilir notlarla takip edin.</h2>
         </div>
-        <p>
-          Yayınlar başlığı altında Av. Oğulcan İnen’in makaleleri listelenir. İçerikler
-          müvekkillerin hızlı karar almasına yardımcı olacak kısa, net ve pratik
-          formatta hazırlanır.
-        </p>
       </section>
 
       <section className="publications">
