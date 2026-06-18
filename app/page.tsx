@@ -161,7 +161,7 @@ export default function Home() {
       <section className="team" id="ekip">
         <div className="section-title">
           <span />
-          <h2>Av. Oğulcan İnen</h2>
+          <h2>Ekip</h2>
         </div>
         <div className="team-grid">
           <Link className="team-card" href="/ekibimiz/ogulcan-inen">

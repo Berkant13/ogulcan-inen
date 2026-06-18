@@ -493,6 +493,7 @@ button:hover {
 
 .practice-card span {
   margin-top: 26px;
+  color: var(--burgundy);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 29px;
   font-weight: 900;
@@ -516,6 +517,7 @@ button:hover {
 }
 
 .practice-card:hover small,
+.practice-card:hover span,
 .practice-card:hover::before {
   color: #f4efe6;
 }
@@ -1175,7 +1177,7 @@ address strong {
 
 /* Editorial newspaper theme */
 body {
-  background: #1b1b1a;
+  background: #f4efe6;
 }
 
 main > .site-header,
@@ -1216,8 +1218,8 @@ main > footer {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(48px, 7vw, 88px);
   font-weight: 900;
-  letter-spacing: -0.08em;
-  line-height: 0.9;
+  letter-spacing: -0.06em;
+  line-height: 0.98;
   text-transform: none;
 }
 
