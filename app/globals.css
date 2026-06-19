@@ -271,11 +271,11 @@ button:hover {
   line-height: 1;
 }
 
-.eyebrow::after {
+.eyebrow::before {
   display: block;
   width: 80px;
   height: 5px;
-  margin-top: 24px;
+  margin-bottom: 24px;
   content: "";
   background: #e52645;
 }
@@ -493,7 +493,7 @@ button:hover {
 
 .practice-card span {
   margin-top: 26px;
-  color: var(--burgundy);
+  color: #a22b1e;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 29px;
   font-weight: 900;
